@@ -1,0 +1,17 @@
+{
+  "name": "timer-task-manager",
+  "version": "1.0.0",
+  "description": "timer-task-manager - task scheduling package, improved version of built-in setTimeout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MrSlavik0",
+  "license": "ISC",
+  "keywords": [
+    "setTimeout",
+    "js",
+    "nodejs",
+    "node"
+  ]
+}
