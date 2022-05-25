@@ -19,9 +19,17 @@ manager.add(); // add default task
 manager.add(
   "MyTitle", // Title task
    10000, // The parameter accepts a numeric value in milliseconds indicating how long or when the event will occur
-   "add", // Timer type. Accepts values: add; fullStamp
+   "add", // Timer type. Accepts values: add; fullStamp; specify
    async () => { return console.log("successfully!"); } // Function to execute when the timer expires
 );
+
+manager.add("TITLE", "через 1 час, 2 минуты и 26 секунд", "specify"); // Custom date and time input type
+
+manager.add("TITLE", "сегодня в 17:39", "specify"); Run today at 17:39:00
+
+manager.add("TITLE", "завтра", "specify"); // Run tomorrow at 00:00:00
+
+
 
 console.log(manager.list()) // List your tasks
 
@@ -37,7 +45,7 @@ interval = new IntervalManager();
 
 interval.create(); // add default interval
 
-interval.add(
+interval.create(
   "MyInterval", // Title interval
    10000, // The parameter accepts a numeric value in milliseconds indicating how long or when the event will occur
    async () => { return console.log("successfully!"); } // Function to execute when the timer expires
