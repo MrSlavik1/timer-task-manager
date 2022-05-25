@@ -66,9 +66,9 @@ class Manager {
 	}
 
 	deleteToTitle (title) {
-		let items = this.tasks.filter(task => task.title !== title);
+		let items = this.tasks.filter(task => task.title != title);
 
-		this.tasks = this.tasks.filter(task => task.title !== title);
+		this.tasks = this.tasks.filter(task => task.title != title);
 
 		return {
 			count: {
@@ -80,9 +80,9 @@ class Manager {
 	}
 
 	deleteToID (id) {
-		let items = this.tasks.filter(task => task.id !== id);
+		let items = this.tasks.filter(task => task.id != id);
 
-		this.tasks = this.tasks.filter(task => task.id !== id);
+		this.tasks = this.tasks.filter(task => task.id != id);
 
 		return {
 			count: {
@@ -94,9 +94,9 @@ class Manager {
 	}
 
 	deleteToType (type) {
-		let items = this.tasks.filter(task => task.type !== type);
+		let items = this.tasks.filter(task => task.type != type);
 
-		this.tasks = this.tasks.filter(task => task.type !== type);
+		this.tasks = this.tasks.filter(task => task.type != type);
 
 		return {
 			count: {

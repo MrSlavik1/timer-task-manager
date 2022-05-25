@@ -1,6 +1,6 @@
 {
   "name": "timer-task-manager",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "timer-task-manager - task scheduling package, improved version of built-in setTimeout",
   "main": "index.js",
   "scripts": {
@@ -13,5 +13,13 @@
     "js",
     "nodejs",
     "node"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrSlavik0/timer-task-manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrSlavik0/timer-task-manager/issues"
+  },
+  "homepage": "https://github.com/MrSlavik0/timer-task-manager#readme"
 }
