@@ -51,6 +51,24 @@ interval.create(
    async () => { return console.log("successfully!"); } // Function to execute when the timer expires
 );
 
+interval.create(
+  "CustomInterval",
+  "каждые 3 часа 26 минут и 18 секунд",
+  async () => console.log("OK!")
+);
+
+interval.create(
+  "CustomInterval",
+  "каждый день в 18:19:38",
+  async () => console.log("OK!")
+);
+
+interval.create(
+  "CustomInterval",
+  "каждый день",
+  async () => console.log("OK!")
+);
+
 interval.stop(0); // Stop a valid interval with the specified ID
 interval.start(0); // Start interval with specified ID
 
